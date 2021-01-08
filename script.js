@@ -57,10 +57,11 @@ function generatePassword(criteria){
         alert("You must choose at least one character type to put in your password.")
       }
 
+      var newPw = "";
       for(var i=0; i<=criteria.length - 1; i++){
         var random = Math.floor(Math.random()*pw.length);
         var str = pw[random];
-        var newPw = newPw + str;
+        newPw = newPw + str;
       }
       
   return newPw;
